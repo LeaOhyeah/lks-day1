@@ -1,0 +1,125 @@
+nav {
+  background-color: red;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex; /* display menyamping tiap komponen baru atau div*/
+  align-items: center; /* rata kanan kiri atas bawah di tengah */
+  padding: 1rem;
+}
+
+.nav-link {
+  /* memenuhi seluruh ruang */
+  flex: 1;
+}
+
+.nav-link > ul {
+  /* menghilangkan point ul */
+  list-style: none;
+  /* komponen ke kanan */
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.nav-link > ul > li {
+  /* display menyamping tiap komponen baru */
+  display: inline-block;
+  margin-left: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sidebar-content {
+  margin-top: 2rem;
+}
+
+.sidebar-content > ul {
+  list-style: none;
+}
+
+.sidebar-content > ul > li {
+  padding: 0.5rem;
+}
+
+.sidebar-content a {
+  color: black;
+  text-decoration: none;
+  font-weight: semi-blod;
+}
+
+.sidebar-content .active {
+  background-color: red !important;
+}
+
+.sidebar-content li:hover {
+  background-color: pink;
+  font-weight: bold !important;
+}
+
+.sidebar-content .active a {
+  color: white;
+  font-weight: bold;
+}
+
+/* .carousel {
+  position: static   !important;
+} */
+
+.carousel-item img {
+  max-height: 350px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.detail-game {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  background-color: palevioletred;
+  z-index: 1000;
+}
+
+footer {
+  background-color: gray;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.detail-game {
+  display: none;
+}
+
+.detail-game.active {
+  display: block;
+}
+
+.detail-game-content {
+  flex: 1;
+}
+
+.card {
+  position: static;
+}
